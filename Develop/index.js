@@ -8,12 +8,28 @@ const questions = () => {
         {
             type: 'input',
             name: 'project',
-            message: 'What is the name of your project? (Required)'
+            message: 'What is the name of your project? (Required)',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please provide a name for the project.');
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'description',
-            message: 'Write a description of your project (Required):'
+            message: 'Write a description of your project (Required):',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please provide a description for the project.');
+                    return false;
+                }
+            }
         },
         {
             type: 'confirm',
@@ -40,6 +56,11 @@ const questions = () => {
             type: 'input',
             name: 'license',
             message: 'Add license here:'
+        },
+        {
+            type: 'input',
+            name: 'url',
+            message: 'Enter URL for site (if you have one):'
         }
     ])
 };

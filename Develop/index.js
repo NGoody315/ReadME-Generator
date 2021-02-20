@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 
-const inquirer = require("inquirer");
+const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -33,14 +33,21 @@ const questions = () => {
         },
         {//Confirm Table of Contents
             type: 'confirm',
-            name: 'contents',
+            name: 'confirmTable',
             message: 'Would you like to add a table of contents?',
-            default: false
+            default: true
         },
         {//Table of Contents
             type: 'input',
-            name: 'table1',
-            message: 'What is the first section in your table of contents?'
+            name: 'table',
+            message: 'Provide a section in your table of contents:',
+            when: ({confirmTable}) => {
+                if (confirmTable){
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         },
         {//Installation
             type: 'input',
@@ -70,10 +77,15 @@ const questions = () => {
             name: 'license',
             message: 'Add license here:'
         },
-        {//Deployment URL
+        {//Questions - GitHub
             type: 'input',
-            name: 'url',
-            message: 'Enter URL for site (if you have one):'
+            name: 'github',
+            message: 'What is your GitHub Username?'
+        },
+        {//Questions - Email
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address?'
         }
     ])
 };
@@ -81,10 +93,10 @@ const questions = () => {
 questions().then(answers => console.log(answers));
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+//function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+//function init() {}
 
 // Function call to initialize app
-init();
+//init();

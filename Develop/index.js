@@ -1,6 +1,5 @@
 // TODO: Include packages needed for this application
-
-const inquirer = require('inquirer');
+const inquirer = require('dependencies');
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -27,24 +26,6 @@ const questions = () => {
                     return true;
                 } else {
                     console.log('Please provide a description for the project.');
-                    return false;
-                }
-            }
-        },
-        {//Confirm Table of Contents
-            type: 'confirm',
-            name: 'confirmTable',
-            message: 'Would you like to add a table of contents?',
-            default: true
-        },
-        {//Table of Contents
-            type: 'input',
-            name: 'table',
-            message: 'Provide a section in your table of contents:',
-            when: ({confirmTable}) => {
-                if (confirmTable){
-                    return true;
-                } else {
                     return false;
                 }
             }
@@ -93,10 +74,11 @@ const questions = () => {
 questions().then(answers => console.log(answers));
 
 // TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
+const generatePage = require('./src/page-template');
+function writeToFile(generatePage) {}
 
 // TODO: Create a function to initialize app
-//function init() {}
+function init() {}
 
 // Function call to initialize app
-//init();
+init();

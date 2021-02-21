@@ -1,35 +1,30 @@
 function generatePage(data) {
 return `
-#${data.project}
+# ${data.project}
 
 ${data.description}
 
-##Table of Contents
--Installation (#install)
--Usage (#usage)
--Collaborations (#collab)
--Licenses (#license)
--Questions (#question)
+## Table of Contents
+1. [Installation](#install)
+2. [Usage](#usage)
+3. [Collaborations](#collab)
+4. [Licenses](#license)
+5. [Questions](#question)
 
-<a name='install'></a>
-##Installation
+## <a name="install"/>Installation
 ${data.install}
 
-<a name='usage'></a>
-##Usage
+## <a name="usage"/>Usage
 ${data.usage}
 
-<a name='collab'></a>
-##Collaborations
+## <a name="collab"/>Collaborations
 ${data.credits}
 
-<a name='liscense'></a>
-##Licenses
+## <a name="license"/>Licenses
 ${data.license}
 
-<a name='question'></a>
-##Questions
-If you have any questions you can contact me through <a href="https://github.com/${data.github}>GitHub</a> or sent me an email at : ${data.email}.
+## <a name="question"/>Questions
+If you have any questions you can contact me through https://github.com/${data.github} or send me an email at : ${data.email}.
 `;
 }
 

@@ -1,31 +1,26 @@
 
-#ReadMe Generator
+# ReadMe Generator
 
-This code allows for people to easily create a professional READMe for their projects.
+This code allows someone to quickly generate a ReadMe.md using their command line or terminal
 
-##Table of Contents
--Installation (#install)
--Usage (#usage)
--Collaborations (#collab)
--Licenses (#license)
--Questions (#question)
+## Table of Contents
+1. [Installation](#install)
+2. [Usage](#usage)
+3. [Collaborations](#collab)
+4. [Licenses](#license)
+5. [Questions](#question)
 
-<a name='install'></a>
-##Installation
-Download the code, install Node.js and then run in your command line
+## <a name="install"/>Installation
+Copy code, clone to local, install node.js, run in command line/terminal
 
-<a name='usage'></a>
-##Usage
-This code is a great tool for anyone who needs to make a READMe quickly. Can be used for any size projects.
+## <a name="usage"/>Usage
+Once you create a project in the command line you can easily generate the ReadMe in the same terminal window
 
-<a name='collab'></a>
-##Collaborations
-N/A
+## <a name="collab"/>Collaborations
+NA
 
-<a name='liscense'></a>
-##Licenses
+## <a name="license"/>Licenses
 Unlicense
 
-<a name='question'></a>
-##Questions
-If you have any questions you can contact me through <a href="https://github.com/NGoody315>GitHub</a> or sent me an email at : nikki.goodridge@gmail.com.
+## <a name="question"/>Questions
+If you have any questions you can contact me through https://github.com/NGoody315 or send me an email at : nikki.goodridge@gmail.com.

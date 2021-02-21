@@ -1,7 +1,7 @@
 
 # ReadMe Generator
 
-This code allows for people to easily create a professional ReadMe for their projects using the terminal/command line
+This code allows for people tp easily create a professional ReadMe for their projects using the terminal/command line
 
 ## Table of Contents
 1. [Installation] (#install)
@@ -10,12 +10,11 @@ This code allows for people to easily create a professional ReadMe for their pro
 4. [Licenses] (#licenses)
 5. [Questions] (#questions)
 
-<a name='install'></a>
-## 1. Installation
+## <a name='install'></a> 1. Installation
 Copy code, clone to your local, install node.js, run in command line/terminal
 
 ## Usage
-This code is a great tool for anyone who needs to quickly create a ReadMe for their project, regardless of size.
+If you used your terminal to create your project you can use it to also create the ReadMe
 
 ## Collaborations
 NA

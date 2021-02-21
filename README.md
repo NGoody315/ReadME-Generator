@@ -1,5 +1,5 @@
 
-## ReadMe Generator
+# ReadMe Generator
 
 This code allows for people to easily create a professional READMe for their projects using the terminal/command line
 

@@ -1,51 +1,36 @@
-
+function generatePage(data) {
 return `
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Project READMe</title>
-    </head>
+#${data.project}
 
-    <body>
-    <h1>${project}</h1><br>
+${data.description}
 
-    <div>
-    <h2>Description</h2><br>
-    <p>${description}</p><br>
-    </div>
-    
-    <div>
-    <h2>Table of Contents</h2><br>
-    <h5><a href=#install>Installation</a></h5><br>
-    <h5><a href=#usage>Usage</a></h5><br>
-    <h5><a href=#credits>Credits</a></h5><br>
-    <h5><a href=#license>License</a></h5><br>
-    <h5><a href=#questions>Questions</a></h5><br>
-    </div>
+##Table of Contents
+-Installation (#install)
+-Usage (#usage)
+-Collaborations (#collab)
+-Licenses (#license)
+-Questions (#question)
 
-    <div>
-    <h2 id='install'>Installation</h2><br>
-    <p>${install}</p><br>
-    </div>
+<a name='install'></a>
+##Installation
+${data.install}
 
-    <div>
-    <h2 id='usage'>Usage</h2><br>
-    <p>${usage}</p><br>
-    </div>
+<a name='usage'></a>
+##Usage
+${data.usage}
 
-    <h2 id='credits'>Credits</h2><br>
-    <p>${credits}</p><br>
+<a name='collab'></a>
+##Collaborations
+${data.credits}
 
-    <h2 id='license'>License</h2><br>
-    <p>${license}</p><br>
+<a name='liscense'></a>
+##Licenses
+${data.license}
 
-    <h2 id='questions'>Questions</h2><br>
-    <p>${email}, ${github}</p><br>
-    <p>If you have any questions, please, email me or find me on GitHub!"</p>
-    
-    </body>
-    </html>
+<a name='question'></a>
+##Questions
+If you have any questions you can contact me through <a href="https://github.com/${data.github}>GitHub</a> or sent me an email at : ${data.email}.
 `;
+}
+
+module.exports = generatePage;

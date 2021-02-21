@@ -1,5 +1,7 @@
 // TODO: Include packages needed for this application
-const inquirer = require('dependencies');
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generatePage = require('./src/page-template');
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -54,9 +56,10 @@ const questions = () => {
             message: 'Please add the GitHub link for any other collaborators on this project:'
         },
         {//License
-            type: 'input',
+            type: 'checkbox',
             name: 'license',
-            message: 'Add license here:'
+            message: 'Which license are attributed to your project? Check all that apply.',
+            choices: ['Apache', 'Boost', 'BSD2', 'BSD3', 'Eclipse', 'GNU GPLv3', 'IBM', 'ISC', 'MIT', 'Mozilla', 'Perl', 'SIL', 'Unlicense', 'WTFPL', 'Zlib']
         },
         {//Questions - GitHub
             type: 'input',
@@ -71,14 +74,14 @@ const questions = () => {
     ])
 };
 
-questions().then(answers => console.log(answers));
-
 // TODO: Create a function to write README file
-const generatePage = require('./src/page-template');
-function writeToFile(generatePage) {}
+questions()
+.then((answers) => {
 
-// TODO: Create a function to initialize app
-function init() {}
+    fs.writeFile('./README.md', generatePage({...answers}), err => {
+        if(err) throw new Error (err);
 
-// Function call to initialize app
-init();
+        console.log('ReadMe created!')
+    });
+});
+

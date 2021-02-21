@@ -4,11 +4,11 @@
 This code allows someone to quickly generate a ReadMe.md using their command line or terminal.
 
 ## Table of Contents
-1. [Installation] (#install)
-2. [Usage] (#usage)
-3. [Collaborations] (#collab)
-4. [Licenses] (#license)
-5. [Questions] (#question)
+1. [Installation](#install)
+2. [Usage](#usage)
+3. [Collaborations](#collab)
+4. [Licenses](#license)
+5. [Questions](#question)
 
 <a name="install"/>
 ## Installation
@@ -16,7 +16,7 @@ Copy code, clone to local, install node.js, run in command line/terminal
 
 <a name="usage"/>
 ## Usage
-Once you create a project in the command line you can easily generate the ReadMe in the same command line
+Once you create a project in the command line you can easily generate the ReadMe in the same terminal
 
 <a name="collab"/>
 ## Collaborations

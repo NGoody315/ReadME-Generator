@@ -3,6 +3,8 @@
 
 This code allows someone to quickly generate a ReadMe.md using their command line or terminal
 
+Walkthrough:  https://drive.google.com/file/d/1SW8TrA3zg8gsoc4o6B2FLL20L-MLgV18/view
+
 ## Table of Contents
 1. [Installation](#install)
 2. [Usage](#usage)
